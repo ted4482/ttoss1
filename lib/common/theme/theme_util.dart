@@ -1,5 +1,5 @@
-import 'package:fast_app_base/common/data/preference/prefs.dart';
-import 'package:fast_app_base/common/theme/custom_theme.dart';
+import 'package:ttoss1/common/data/preference/prefs.dart';
+import 'package:ttoss1/common/theme/custom_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
