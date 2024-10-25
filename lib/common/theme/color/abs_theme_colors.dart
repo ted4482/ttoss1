@@ -1,14 +1,14 @@
-import 'package:fast_app_base/common/constant/app_colors.dart';
+import 'package:ttoss1/common/constant/app_colors.dart';
 import 'package:flutter/material.dart';
 
-export 'package:fast_app_base/common/constant/app_colors.dart';
+export 'package:ttoss1/common/constant/app_colors.dart';
 
 typedef ColorProvider = Color Function();
 
 abstract class AbstractThemeColors {
   const AbstractThemeColors();
 
-  Color get seedColor => const Color(0xff26ff8c);
+  Color get seedColor => Colors.black;
 
   Color get veryBrightGrey => AppColors.brightGrey;
 
@@ -32,7 +32,7 @@ abstract class AbstractThemeColors {
 
   Color get divider => const Color.fromARGB(255, 228, 228, 228);
 
-  Color get text => AppColors.darkGrey;
+  Color get text => const Color.fromARGB(255, 228, 228, 228);
 
   Color get hintText => AppColors.middleGrey;
 
@@ -45,4 +45,10 @@ abstract class AbstractThemeColors {
   Color get snackbarBgColor => AppColors.mediumBlue;
 
   Color get blueButtonBackground => AppColors.darkBlue;
+
+  Color get appBarBackground => AppColors.veryDarkGrey;
+
+  Color? get lessImportantText => Colors.grey;
+
+  Color get unreadNotification => AppColors.darkGrey;
 }
