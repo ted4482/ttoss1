@@ -74,6 +74,7 @@ dependencies:
   freezed_annotation: ^2.2.0
   json_annotation: ^4.8.0
   timeago: ^3.7.0
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
@@ -108,10 +109,12 @@ flutter:
   assets:
     - assets/json/
     - assets/image/
+    - assets/image/bank/
     - assets/image/icon/
     - assets/image/flag/
     - assets/image/darkmode/
     - assets/image/notification/
+    - assets/image/splash/
     - assets/translations/
     - assets/
 

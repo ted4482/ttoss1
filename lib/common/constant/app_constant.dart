@@ -1,6 +1,6 @@
 import 'package:ttoss1/common/common.dart';
 
-const width10 = Width(20);
+const width10 = Width(10);
 const width20 = Width(20);
 const width30 = Width(30);
 

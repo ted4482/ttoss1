@@ -3,13 +3,18 @@ import 'package:ttoss1/common/common.dart';
 import 'package:ttoss1/common/constant/app_constant.dart';
 import 'package:ttoss1/screen/notification/s_notification.dart';
 
-class HomeAppBarFragment extends StatelessWidget {
+class HomeAppBarFragment extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBarFragment({super.key});
 
   @override
+  Size get preferredSize => const Size.fromHeight(60);
+
+  @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
+    return AppBar(
+      backgroundColor: AppColors.veryDarkGrey,
+      actions: [
+        width10,
         Tap(
           onTap: () => context.showSnackbar("Welcome Toos!"),
           child: Image.asset("$basePath/icon/toss.png", height: 30),
@@ -19,7 +24,7 @@ class HomeAppBarFragment extends StatelessWidget {
           onTap: () => context.showSnackbar("Map Point!"),
           child: Image.asset("$basePath/icon/map_point.png", height: 30),
         ),
-        width20,
+        width10,
         Tap(
           onTap: () => {Nav.push(const NotificationScreen())},
           child: Stack(
@@ -41,7 +46,8 @@ class HomeAppBarFragment extends StatelessWidget {
             ],
           ),
         ),
+        width10,
       ],
-    ).px20();
+    );
   }
 }

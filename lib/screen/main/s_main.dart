@@ -1,3 +1,6 @@
+import 'package:after_layout/after_layout.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:ttoss1/common/cli_common.dart';
 import 'package:ttoss1/screen/main/tab/tab_item.dart';
 import 'package:ttoss1/screen/main/tab/tab_navigator.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +15,7 @@ class MainScreen extends StatefulWidget {
   State<MainScreen> createState() => MainScreenState();
 }
 
-class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMixin {
+class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMixin, AfterLayoutMixin {
   TabItem _currentTab = TabItem.home;
   final tabs = [TabItem.home, TabItem.benefit, TabItem.tosspay, TabItem.stock, TabItem.all];
   final List<GlobalKey<NavigatorState>> navigatorKeys = [];
@@ -29,6 +32,15 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
   void initState() {
     super.initState();
     initNavigatorKeys();
+  }
+
+  @override
+  FutureOr<void> afterFirstLayout(BuildContext context) async {
+    // await login();
+    // await loading();
+    delay(() {
+      FlutterNativeSplash.remove();
+    }, 1500.ms);
   }
 
   @override
@@ -95,6 +107,7 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
         child: BottomNavigationBar(
           items: navigationBarItems(context),
           currentIndex: _currentIndex,
+          backgroundColor: AppColors.darkGrey,
           selectedItemColor: context.appColors.text,
           unselectedItemColor: context.appColors.iconButtonInactivate,
           onTap: _handleOnTapNavigationBarItem,
@@ -158,4 +171,5 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
       navigatorKeys.add(GlobalKey<NavigatorState>());
     }
   }
+
 }
