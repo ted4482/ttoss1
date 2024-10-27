@@ -53,4 +53,6 @@ abstract class AbstractThemeColors {
   Color? get lessImportantText => Colors.grey;
 
   Color get unreadNotification => AppColors.darkGrey;
+
+  Color get benefitBackground => const Color.fromARGB(100, 25, 24, 29);
 }
