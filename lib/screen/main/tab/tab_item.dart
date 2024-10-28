@@ -3,12 +3,13 @@ import 'package:ttoss1/common/common.dart';
 import 'package:ttoss1/screen/main/tab/benefit/s_benefit.dart';
 import 'package:ttoss1/screen/main/tab/home_sample/f_home_sample.dart';
 import 'package:ttoss1/screen/main/tab/home/s_home.dart';
+import 'package:ttoss1/screen/main/tab/stock/s_stock.dart';
 
 enum TabItem {
   home(Icons.home, '홈', HomeScreen()),
   benefit(Icons.star, '혜택', BenefitScreen()),
   tosspay(Icons.payment, '토스페이', HomeSampleFragment()),
-  stock(Icons.candlestick_chart, '주식', HomeScreen()),
+  stock(Icons.candlestick_chart, '주식', StockScreen()),
   all(Icons.menu, '전체', HomeScreen());
 
   final IconData activeIcon;

@@ -1,8 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:ttoss1/common/common.dart';
 import 'package:ttoss1/common/theme/custom_theme_app.dart';
 import 'package:ttoss1/screen/main/s_main.dart';
-import 'package:flutter/material.dart';
-import 'package:ttoss1/screen/splash/s_splash.dart';
 
 import 'common/theme/custom_theme.dart';
 

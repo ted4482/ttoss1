@@ -53,7 +53,7 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
         drawer: const MenuDrawer(),
         body: Container(
           color: context.appColors.seedColor,
-          padding: EdgeInsets.only(bottom: extendBody ? 60 - bottomNavigationBarBorderRadius : 0),
+          padding: EdgeInsets.zero,
           child: SafeArea(
             bottom: !extendBody,
             child: pages,
@@ -171,5 +171,4 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
       navigatorKeys.add(GlobalKey<NavigatorState>());
     }
   }
-
 }
