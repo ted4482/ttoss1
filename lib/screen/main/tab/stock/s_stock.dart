@@ -4,6 +4,7 @@ import 'package:ttoss1/common/constant/app_constant.dart';
 import 'package:ttoss1/screen/main/tab/stock/f_todayDiscovery.dart';
 import 'package:ttoss1/screen/main/tab/stock/my_account/f_my_account.dart';
 import 'package:ttoss1/screen/main/tab/stock/search/s_search_stock.dart';
+import 'package:ttoss1/screen/main/tab/stock/setting/s_setting.dart';
 
 class StockScreen extends StatefulWidget {
   const StockScreen({super.key});
@@ -26,13 +27,14 @@ class _StockScreenState extends State<StockScreen> with SingleTickerProviderStat
             pinned: true,
             actions: [
               Tap(
-                onTap: () {
-                  Nav.push(const SearchStockScreen());
-                },
+                onTap: () => Nav.push(const SearchStockScreen()),
                 child: Image.asset("$basePath/icon/stock_search.png", width: 30),
               ),
               Image.asset("$basePath/icon/stock_calendar.png", width: 30),
-              Image.asset("$basePath/icon/stock_settings.png", width: 30),
+              Tap(
+                onTap: () => Nav.push(const SettingScreen()),
+                child: Image.asset("$basePath/icon/stock_settings.png", width: 30),
+              )
             ],
           ),
           SliverToBoxAdapter(
