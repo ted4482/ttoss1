@@ -836,6 +836,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "timeago",
+      "rootUri": "file:///Users/dongchanshin/.pub-cache/hosted/pub.dev/timeago-3.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "timing",
       "rootUri": "file:///Users/dongchanshin/.pub-cache/hosted/pub.dev/timing-1.0.1",
       "packageUri": "lib/",
@@ -962,7 +968,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-10-30T11:19:11.191333Z",
+  "generated": "2024-10-30T12:55:48.366607Z",
   "generator": "pub",
   "generatorVersion": "3.5.3",
   "flutterRoot": "file:///Users/dongchanshin/development/flutter",
