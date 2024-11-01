@@ -5,10 +5,10 @@ const width20 = Width(20);
 const width30 = Width(30);
 
 const height10 = Height(10);
-const height20 = Width(20);
-const height30 = Width(30);
-const height40 = Width(40);
-const height50 = Width(50);
+const height20 = Height(20);
+const height30 = Height(30);
+const height40 = Height(40);
+const height50 = Height(50);
 
 class Height extends StatelessWidget {
   final double height;
